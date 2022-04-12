@@ -2,9 +2,9 @@ import { merge } from "theme-ui"
 import { tailwind } from "@theme-ui/presets"
 
 const theme = merge(tailwind, {
-  initialColorModeName: `dark`,
   config: {
     useCustomProperties: true,
+    initialColorModeName: `dark`,
   },
   colors: {
     primary: tailwind.colors.orange[4],
@@ -25,7 +25,7 @@ const theme = merge(tailwind, {
     icon_purple: tailwind.colors.purple[6],
     icon_green: tailwind.colors.green[5],
     modes: {
-      light: {
+      dark: {
         text: tailwind.colors.gray[8],
         heading: tailwind.colors.black,
         primary: tailwind.colors.orange[7],
